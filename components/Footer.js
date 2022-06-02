@@ -9,30 +9,30 @@ const Footer = () => {
             <div className='flex justify-between mt-3 ml-5 mr-5'>
                 <div className='w-[875px]  '>
                     <h1 className='ml-10 text-xl'>Buy</h1>
-                    <div class="grid  md:grid-cols-3 lg:grid-cols-4 gap-1 p-2">
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold  text-center mx-3 py-[2px] rounded-sm">Home Loan</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 rounded-sm">Property Legal Services</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Interiors</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Sale Agreement</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">NoBroker For NRI's</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">New Builder Project</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">EMI Calculator</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Loan Balance Transfer</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Loan Eligibility Check</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Apply Home Loan</div>
+                    <div className="grid  md:grid-cols-3 lg:grid-cols-4 gap-1 p-2">
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold  text-center mx-3 py-[2px] rounded-sm">Home Loan</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 rounded-sm">Property Legal Services</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Interiors</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Sale Agreement</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">NoBroker For NRI's</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">New Builder Project</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">EMI Calculator</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Loan Balance Transfer</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Loan Eligibility Check</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Apply Home Loan</div>
                     </div>
                 </div>
                 <div className='w-[875px]'>
                     <h1 className='ml-20 text-xl'>Rent</h1>
-                    <div class="grid  md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold  text-center mx-3 py-[2px] rounded-sm">Rental Agreement</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 rounded-sm">Pay Rent</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Refer and Earn</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Services</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Packers and Movers</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Property Management in India</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Services Questions</div>
-                        <div class="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Rent Services Questions</div>
+                    <div className="grid  md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold  text-center mx-3 py-[2px] rounded-sm">Rental Agreement</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 rounded-sm">Pay Rent</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Refer and Earn</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Services</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Packers and Movers</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Property Management in India</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Home Services Questions</div>
+                        <div className="text-gray-500 bg-gray-100 text-[12px] font-bold text-center mx-3 py-[2px] rounded-sm">Rent Services Questions</div>
 
                     </div>
                 </div>

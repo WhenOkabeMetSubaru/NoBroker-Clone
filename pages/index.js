@@ -206,7 +206,10 @@ export default function Home() {
 
 
         {/*--------------------------------------------------------------------- */}
-
+        
+      
+     
+        
         <div className='mt-10 border-[1px]'>
           <div>
             <ul className='flex items-center bg-gray-100 justify-between  border-[1px] py-3 border-gray-300'>
@@ -347,7 +350,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+      
 
 
         {/*------------------------------------------------------------------------------ */}
