@@ -74,11 +74,11 @@ export default function Home() {
           <div><hr className='w-24 mt-3 ml-3 border-gray-400' /></div>
         </div>
 
-        <div className='freepropertybutton flex justify-center mt-7'>
+        <div className='freepropertybutton flex justify-center mt-20 md:mt-7'>
           <button type="button" className='border-[1px] py-2 px-6 bg-green-600 text-white font-semibold'>Post Free Property ad</button>
 
         </div>
-        <div className='items-center flex justify-center mt-4 text-sm py-3 text-white bg-indigo-900'>
+        <div className='items-center flex justify-center mt-10 md:mt-4 text-sm py-3 text-white bg-indigo-900'>
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAABGdBTUEAALGPC/xhBQAAAwtJREFUSA2dlm1ojlEYx92zPWazyLxnU971UEiGfBhmIfENX0haSk+RvKy8JCXxxQc+IG9LUZuSjKUkHxSSTLHGHjNbXpKXsKlp1uP3f7Zzd9rut8dVv65zrvt/Xee+zzn3uW9nQAaWSqUc5HnQ7ThOZwap0aQMUATV8BXa4Q98hIswPEqVrDARhbagqYfHEOdJCmAQ7YXwHr6hWYr/f6PABvgFM/2qcK0UZKV+msA4ieOgC2ZLiM+CsRZjTAFiq6AFhphYZE9SFVSaBBWB4/AQasC9Jg3903DY6Pv6oDUqQ1xjJWjHxaABNJUjwLZqOsvtQGibO3NAO2ugEasNcTgACRM3nlgxtJh+ZE9SJww2CbRzoB7WmJjtiU+H13bMbgdNXRNCd7expbvor4MEBXPsIr3tOP6NRzwdChqoDkWFnchgSfoXYJsdZ2Ctn7S1djxSm+RcaIL1YQloDsID0ICZG4nzQLbXK5u4Ns1+CbChXhoTyzYNL89UPaXAeK7V4kvwV6EZtM2nwWZIwQS0P/G+5vmoFB1GxhRIUuAHfd2Q1qUMiqAb3sIdqEKjwaKZisMOaIQOeAKfoDysAhq9Y8WBOgRa9EugO78CmqK00Z4DH+AI9NuhxGKwHaSRPQJ9PmQlUAj5ptgkOnug75Firkt8C1Rkas8tpM+2TfTb4AboZR0JX2AR7AaZbl7m5pl8X494K3yGe3ANWuFsL+kXmHb6qfGj4BBoSq/DOc/NYI+GaAaL3agYbX3Gl8Es0M7TAPugA00B3jW0hXROwlpQO9hISMJtKAf77Mujrw+j1uSyXYX+RtDTn4CeNbIFXm2EMagAvfm/4QU0w3fQDbjHEe2JcBeewVyvepFiJOdDHLSB3JOAdjZUgv4fdoH7eTGF3TXi4gKCi0FzrVP4JTwPexnJm4/uPLRBAn0rvp/Z78Zoruo/4C+sBM273o8zsAJy6btGX/8UpwjchKMMsNpvEDfJr0GhybAT7kM71IG2awPoH+8Y6LgKNXfqwpQU1O5ZAjr33sErnqATH8n+AUpctG5RzxqlAAAAAElFTkSuQmCC" />
           <h3 className='ml-2 mr-2'>Do you know how much <strong>loan</strong> you can get?Get maximum with <strong>NoBroker</strong></h3>
           <button className='border-[1px] bg-white text-black rounded-md px-1 py-1 text-xs'>Check Eligibility</button>
@@ -98,13 +98,13 @@ export default function Home() {
           </div>
           <div className='whybox flex justify-center mt-10'>
             <div className=''>
-              <hr className='md:w-[600px] md:mt-3  border-gray-400 md:mr-48' />
+              <hr className='md:w-[100px] md:mt-3 hidden md:block   border-gray-400 ' />
             </div>
-            <div className='md:w-[400px] md:ml-16'>
+            <div className='px-10'>
               <h1 className='text-3xl text-slate-500 '>Why Use NoBroker</h1>
             </div>
             <div className=''>
-              <hr className='md:w-[600px] md:mt-3 md:ml-48 border-gray-400' />
+              <hr className='md:w-[100px] md:mt-3 hidden md:block  border-gray-400' />
             </div>
           </div>
           <div className='mt-16'>
@@ -122,13 +122,13 @@ export default function Home() {
         <div className='bg-gray-100 mt-20 py-12'>
           <div className='whybox flex justify-center'>
             <div>
-              <hr className='md:w-[400px] md:mt-3  border-gray-400 md:mr-48' />
+              <hr className='md:w-[100px] md:mt-3 hidden md:block  border-gray-400 ' />
             </div>
-            <div className='md:w-[655px] md:ml-16 '>
+            <div className='px-10 '>
               <h1 className='text-xl md:text-3xl text-slate-500 '>NoBroker Business Assist Plan for Builders</h1>
             </div>
             <div className=''>
-              <hr className='md:w-[400px] md:mt-3 md:ml-48 border-gray-400' />
+              <hr className='md:w-[100px] md:mt-3 hidden md:block  border-gray-400' />
             </div>
           </div>
           <div className='flex justify-center mt-20'>
@@ -150,13 +150,13 @@ export default function Home() {
         <div className='mt-12'>
           <div className='whybox flex justify-center'>
             <div>
-              <hr className='md:w-[550px] md:mt-3  border-gray-400 md:mr-48' />
+              <hr className='md:w-[100px] hidden md:block  md:mt-3  border-gray-400 ' />
             </div>
-            <div className='md:w-[500px] md:ml-16'>
+            <div className='px-10'>
               <h1 className='md:text-3xl text-2xl text-slate-500 '>We Make A Difference</h1>
             </div>
             <div className=''>
-              <hr className='md:w-[550px] md:mt-3 md:ml-48 border-gray-400' />
+              <hr className=' md:mt-3 md:w-[100px] hidden md:block  border-gray-400' />
             </div>
           </div>
           <ul className='flex justify-evenly text-center mt-20'>

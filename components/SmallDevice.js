@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
 import { GrServices } from 'react-icons/gr'
+import {MdOpenInNewOff} from 'react-icons/md'
 import { BiWallet } from 'react-icons/bi'
 import { AiOutlineGift } from 'react-icons/ai'
 const SmallDevice = () => {
@@ -30,8 +31,8 @@ const SmallDevice = () => {
 
             <div className=' w-1/4'>
               <div className='flex justify-center'>
-                <div><Link href="/services"><a><GrServices
-                  className='w-7 h-8' /></a></Link></div>
+                <div><Link href="/services"><a><MdOpenInNewOff
+                  className='w-7 h-8 ' /></a></Link></div>
               </div>
               <h1>Services</h1>
             </div>
