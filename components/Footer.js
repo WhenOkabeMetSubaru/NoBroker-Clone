@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className='mt-28'>
             <div className='text-xl'>
                 <h1>NoBroker Services</h1>
             </div>
@@ -39,12 +39,12 @@ const Footer = () => {
             </div>
 
             <div className='flex justify-evenly mt-20 border-[1px] border-gray-300 bg-gray-100 py-10 text-center'>
-                <div>
+                <div className='text-sm md:text-md'>
                     <h1 className='text-lg font-semibold'>Find Property</h1>
                     <p>Select from thousands of options,without brokerage</p>
                     <button className='mt-6 border-[1px] px-4 py-[3px] text-sm rounded-md text-white bg-slate-700'>Find Now</button>
                 </div>
-                <div>
+                <div className='text-sm md:text-md'>
                     <h1 className='text-lg font-semibold'>List Your Property</h1>
                     <p>For Free.Without any brokerage.</p>
                     <button className='mt-6 border-[1px] px-4 py-[4px] text-sm rounded-md text-white bg-slate-700'>Free Posting</button>
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <div>
                 <div>
-                    <ul className="flex justify-center">
+                    <ul className="md:flex flex-cols text-center md:justify-center">
                         <li className='m-4 font-semibold text-md'>About Us</li>
                         <li className='m-4 font-semibold text-md'>Careers</li>
                         <li className='m-4 font-semibold text-md'>Terms & Conditions</li>
