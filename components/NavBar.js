@@ -142,7 +142,7 @@ const NavBar = () => {
             <ul className='mb-1 lg:flex lg:justify-evenly lg:mt-3 hidden text-sm'>
               <li className='flex cursor-pointer items-center mx-3 border-[1px] border-grey px-2  '><img className='h-5 mr-1' src='https://assets.nobroker.in/nb-new/public/myBooking.svg' /><Link href="/mybooking"><a> My Bookings</a></Link></li>
               <li className='flex mx-3 items-center border-[1px] text-center  border-grey px-2 cursor-pointer'><img className='w-5 h-4  mr-2 mb-1 mt-1' src='https://assets.nobroker.in/nb-new/public/payrent.png' /><Link href="/payrent"><a>Pay Rent</a></Link></li>
-              <li className='bg-green-600 text-center py-1 w-40 text-white'>For Property owners</li>
+              <Link href="/postproperty"><a><li className='bg-green-600 text-center py-1 w-40 text-white'>For Property owners</li></a></Link>
               <li className='flex mx-1 ml-4'><img src="https://assets.nobroker.in/nb-new/public/nbCash.svg" /></li>
               <li className='flex mx-5 text-gray-500  border-[2px] rounded-full h-8 w-8 border-gray-300 '>
                 <div className='flex '><FaUserCircle className='w-7 mr-2 h-7 text-gray-500' />
