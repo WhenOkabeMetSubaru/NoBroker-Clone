@@ -272,7 +272,7 @@ const Postproperty = () => {
 
                         </div>
                     </div>}
-                   { val=="amenities" && <div className='page4'>
+                    {val == "amenities" && <div className='page4'>
                         <div className='mt-5 ml-10 text-green-600 font-semibold'>Provide additional details about your property to get maximum visibility</div>
                         <h1 className='mt-5 mb-5 w-full h-[1px] bg-gray-400'></h1>
                         <div className='upperbox'>
@@ -298,8 +298,107 @@ const Postproperty = () => {
                                 </div>
 
                             </div>
+                            <div className='2row flex justify-evenly mt-5'>
+                                <div className='w-1/4 border-[1px] flex justify-between p-1 rounded-md '>
+                                    <h1>Gym*</h1>
+                                    <span className='flex'>
+                                        <h1 className='border-[1px] p-1 border-gray-400 rounded-lg mr-1  font-semibold'>No</h1>
+                                        <h1 className='border-[1px] p-1 border-gray-400 rounded-lg font-semibold'>Yes</h1>
+                                    </span>
+
+                                </div>
+                                <div className='w-1/4 border-[1px] flex justify-between p-1 rounded-md '>
+                                    <h1>Non-Veg*</h1>
+                                    <span className='flex'>
+                                        <h1 className='border-[1px] p-1 border-gray-400 rounded-lg mr-1  font-semibold'>No</h1>
+                                        <h1 className='border-[1px] p-1 border-gray-400 rounded-lg font-semibold'>Yes</h1>
+                                    </span>
+
+                                </div>
+                                <div className='w-1/4 border-[1px] flex justify-between p-1 rounded-md '>
+                                    <h1>Gated-Security*</h1>
+                                    <span className='flex'>
+                                        <h1 className='border-[1px] p-1 border-gray-400 rounded-lg mr-1  font-semibold'>No</h1>
+                                        <h1 className='border-[1px] p-1 border-gray-400 rounded-lg font-semibold'>Yes</h1>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                            <div className='3row m-8 flex justify-start'>
+                                <div className="field   text-gray-500 ">
+                                    <label htmlFor="showproperty">Who will show the property*</label><br />
+                                    <select id="roles" className="text-sm dropdown1   w-[275px] border-gray-300 border-[1px] py-2 bg-white">
+                                        <option value="">Select</option>
+                                        <option value="needhelp" >Need help</option>
+                                        <option value="iwillshow" >I will show</option>
+                                        <option value="neighbours">Neighbours</option>
+                                        <option value="friends">Friends/Relatives</option>
+                                        <option value="relatives">Relatives</option>
+                                        <option value="tenants">Tenants</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+                                <div className=' ml-10 '>
+                                    <label htmlFor="secondarynumber">Secondary Number*</label><br />
+                                    <input className='text-xs py-2 px-1 w-[245px] border-gray-300 border-[1px]' placeholder='Secondary Number' />
+                                </div>
+
+                            </div>
+                            <h1 className='w-full h-[1px] bg-gray-400'></h1>
+                            <h1 className='m-5'>Select the available amenities </h1>
+                            <div className='4row flex justify-evenly'>
+                                <div className='left m-9'>
+                                    <ul className='space-y-6'>
+                                        <li><input type="checkbox" />Lift</li>
+                                        <li><input type="checkbox" />Air Conditioner</li>
+                                        <li><input type="checkbox" />Intercom</li>
+                                        <li><input type="checkbox" />Children Play Area</li>
+                                        <li><input type="checkbox" />Servant Room</li>
+                                        <li><input type="checkbox" />Gas Pipeline</li>
+                                        <li><input type="checkbox" />Rain Water Harvesting</li>
+                                        <li><input type="checkbox" />House Keeping</li>
+                                        <li><input type="checkbox" />Visitor Parking</li>
+                                    </ul>
+                                </div>
+                                <div className='left m-9'>
+                                    <ul className='space-y-6'>
+                                        <li><input type="checkbox" />Internet Services</li>
+                                        <li><input type="checkbox" />Club House</li>
+                                        <li><input type="checkbox" />Swimming Pool</li>
+                                        <li><input type="checkbox" />Fire Safety</li>
+                                        <li><input type="checkbox" />Shopping Center</li>
+                                        <li><input type="checkbox" />Park</li>
+                                        <li><input type="checkbox" />Sewage Treatment Plant</li>
+                                        <li><input type="checkbox" />Power Backup</li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
                         </div>
-                    </div>} 
+                    </div>}
+                    {
+                        val == "gallery" &&
+                        <div className='page-5'>
+                            <div>
+                                <div className='m-5 text-green-600 font-semibold'>Upload photos & videos</div>
+                                <h1 className='w-full h-[1px] bg-gray-300'></h1>
+                                <div className='ml-14 mt-10 bg-gray-100 rounded-md border-[1px] w-[650px] h-[20vh] flex justify-center'>
+                                    <div className=' h-full w-1/2 text-center '>
+                                        <h1 className='mt-14 font-semibold'>Add photos to get 5X more responses</h1>
+                                        <p>90% tenants contact on properties with photos</p>
+                                        <button className='bg-green-600 text-white rounded-md px-4 mt-6 py-1'>Add Photos</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    }
                 </div>
 
                 <div className='rightcol w-[175px] bg-yellow-100 h-[100vh]'>
