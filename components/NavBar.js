@@ -46,7 +46,7 @@ const NavBar = () => {
   }
 
   /*-------------------------------------------------------*/
-  const togglelist1=()=>{
+  const togglelist1 = () => {
     if (mylist1 === 'open') {
       setMyList1("close")
     }
@@ -54,7 +54,7 @@ const NavBar = () => {
       setMyList1("open")
     }
   }
-  const togglelist2=()=>{
+  const togglelist2 = () => {
     if (mylist2 === 'open') {
       setMyList2("close")
     }
@@ -63,7 +63,7 @@ const NavBar = () => {
     }
   }
 
-  const togglelist3=()=>{
+  const togglelist3 = () => {
     if (mylist3 === 'open') {
       setMyList3("close")
     }
@@ -71,7 +71,7 @@ const NavBar = () => {
       setMyList3("open")
     }
   }
-  const togglelist4=()=>{
+  const togglelist4 = () => {
     if (mylist4 === 'open') {
       setMyList4("close")
     }
@@ -79,7 +79,7 @@ const NavBar = () => {
       setMyList4("open")
     }
   }
-  const togglelist5=()=>{
+  const togglelist5 = () => {
     if (mylist5 === 'open') {
       setMyList5("close")
     }
@@ -87,7 +87,7 @@ const NavBar = () => {
       setMyList5("open")
     }
   }
-  const togglelist6=()=>{
+  const togglelist6 = () => {
     if (mylist6 === 'open') {
       setMyList6("close")
     }
@@ -95,7 +95,7 @@ const NavBar = () => {
       setMyList6("open")
     }
   }
-  const togglelist7=()=>{
+  const togglelist7 = () => {
     if (mylist7 === 'open') {
       setMyList7("close")
     }
@@ -103,7 +103,7 @@ const NavBar = () => {
       setMyList7("open")
     }
   }
-  const togglelist8=()=>{
+  const togglelist8 = () => {
     if (mylist8 === 'open') {
       setMyList8("close")
     }
@@ -111,7 +111,7 @@ const NavBar = () => {
       setMyList8("open")
     }
   }
-  const togglelist9=()=>{
+  const togglelist9 = () => {
     if (mylist9 === 'open') {
       setMyList9("close")
     }
@@ -163,18 +163,91 @@ const NavBar = () => {
                       <div className={`origin-top-right ${open === "close" ? 'hidden' : ''} absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                         <div className="py-1" role="none">
 
-                          <a href="/navbarelem/profile" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Profile</a>
-                          <Link href="/mychats"><a  className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">My Chats</a></Link>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Support Charts</a>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Residential Plans</a>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Commercial Plans</a>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Dashboard</a>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Listing</a>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Rental Agreements</a>
-                          <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Sign Out</a>
-                          <form method="POST" action="#" role="none">
-                            <button type="submit" className="text-gray-700 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-3">Sign out</button>
-                          </form>
+                          <Link href="/navbarelem/profile"><a className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Profile</a></Link>
+                          <Link href="/mychats"><a className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">My Chats</a></Link>
+                          <Link href="/navbarelem/mysupportchats"><a className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Support Charts</a></Link>
+                          
+                            <a onClick={togglelist1} className={`flex    items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
+
+                              <span>My Residential Plans</span>
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                              </svg>
+                            </a>
+                            <ul className={`relative ${mylist1 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Tenants</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owners</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Buyers</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Sellers</a>
+                              </li>
+                            </ul>
+                         
+                            <a onClick={togglelist2} className={`flex    items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
+
+                              <span>My Commercial Plans</span>
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                              </svg>
+                            </a>
+                            <ul className={`relative ${mylist2 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                            <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Tenants</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owners</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Buyers</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Sellers</a>
+                              </li>
+                            </ul>
+                            <a onClick={togglelist3} className={`flex    items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
+
+                              <span>My Dashboard</span>
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                              </svg>
+                            </a>
+                            <ul className={`relative ${mylist3 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                            <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Timeline</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Shortlists</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Property Visits</a>
+                              </li>
+                              
+                            </ul>
+                            <a onClick={togglelist4} className={`flex    items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
+
+                              <span>My Listing</span>
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                              </svg>
+                            </a>
+                            <ul className={`relative ${mylist4 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                            <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">My Properties</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Interest Shown</a>
+                              </li>
+                              
+                            </ul>
+                          <a href="#" className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Rental Agreements</a>
+                          <a href="#" className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Sign Out</a>
+                         
                         </div>
                       </div>
                     </div>
@@ -208,7 +281,27 @@ const NavBar = () => {
                         <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Owner Plans</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Buyer Plans</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Seller Plans</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Commercial Plans</a>
+                        <a onClick={togglelist2} className={`flex    items-center text-sm py-1 px-4 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
+
+                              <span>My Commercial Plans</span>
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                              </svg>
+                            </a>
+                            <ul className={`relative ${mylist2 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                            <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Tenants</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owners</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Buyers</a>
+                              </li>
+                              <li className="relative">
+                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Sellers</a>
+                              </li>
+                            </ul>
                         <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Carrers</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Corporate Enquiry</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Contact Us</a>
@@ -250,13 +343,13 @@ const NavBar = () => {
             <ul className="relative">
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist1} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>My Services</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist1==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist1 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">My Bookings</a>
                   </li>
@@ -286,13 +379,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist2} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>NBcash Wallet</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist2==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist2 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Wallet Summary</a>
                   </li>
@@ -303,13 +396,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist3} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>Residential Plans</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist3==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist3 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owner</a>
                   </li>
@@ -326,13 +419,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist4} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>Commercial Plans</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist4==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist4 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owner</a>
                   </li>
@@ -349,13 +442,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist5} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>Home Services</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist5==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist5 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Packers and Movers</a>
                   </li>
@@ -375,13 +468,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist6} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>NoBroker Pay</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist6==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist6 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Pay Your Rent</a>
                   </li>
@@ -398,13 +491,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist7} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>Legal Assitance & Loan</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist7==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist7 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Rental Agreement</a>
                   </li>
@@ -424,13 +517,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist8} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>Utilities</span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist8==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist8 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Know Your Rent</a>
                   </li>
@@ -444,13 +537,13 @@ const NavBar = () => {
               </li>
               <li className="relative" id="sidenavEx1">
                 <a onClick={togglelist9} className={`flex mt-3 bg-gray-100   items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-                  
+
                   <span>Help & Support </span>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                   </svg>
                 </a>
-                <ul className={`relative ${mylist9==="close"?'hidden':'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                <ul className={`relative ${mylist9 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">Support Topics</a>
                   </li>
@@ -475,12 +568,12 @@ const NavBar = () => {
                   <li className="relative">
                     <a href="#!" className="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Sellers</a>
                   </li>
-                  
+
                 </ul>
               </li>
-             
-              
-             
+
+
+
             </ul>
           </div>
         </div>
