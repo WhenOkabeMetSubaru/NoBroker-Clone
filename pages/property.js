@@ -16,14 +16,14 @@ const Property = (props) => {
         <section>
             <div className='flex justify-center'>
                 <div className='flex justify-center w-[95vw] md:w-[85vw] bg-white h-full'>
-                    <div className='lg:w-1/2 md:w-full mt-24 bg-white'>
+                    <div className='lg:w-1/2   md:w-full mt-24 bg-white'>
                         
 
                         {
                             data.map((elem,i)=>{
 
                             
-                         return  <div key={i} className='w-full  h-[60vh] md:h-[400px] border-2 text-xs md:text-[15px] bg-white my-5'>
+                         return  <div key={i} className='w-full  h-[75vh] md:h-[400px] border-2 text-xs md:text-[15px] bg-white my-5'>
                                <div className=' pl-3 text-xs flex  text-gray-500'>
                                 <div>
                                     <h1 className='text-sm hover:text-pink-700 text-gray-600 font-semibold'>{elem.headline}</h1>
@@ -58,9 +58,9 @@ const Property = (props) => {
                                 </div>
                                 <div className='w-full mt-5 md:hidden text-center  text-white '><button className='bg-pink-600 p-2' >Get Owner Details</button></div>
                             </div>
-                            <div className='flex justify-start   mt-8 md:mt-10'>
+                            <div className='flex justify-start   mt-8 md:mt-8 ' >
                                 <h1 className='ml-2 '>Nearby:</h1>
-                                <ul className='md:flex md:justify-evenly grid grid-cols-3 gap-1'>
+                                <ul className='md:flex md:justify-evenly mb-32 grid grid-cols-3 gap-1'>
                                     {
                                         elem.nearby_landmarks.map((val,idx)=>{
 

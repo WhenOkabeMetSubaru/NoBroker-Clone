@@ -32,10 +32,17 @@ export default function Home() {
           <div className="field flex justify-center">
 
             <select id="sites" className="dropdown4  py-3 px-[1px] md:px-5 border-[1px] font-semibold text-gray-500 bg-white ">
-              <option value="">Mumbai</option>
-              <option value="800 Sqft">800 Sqft</option>
-              <option value="1000 Sqft">1000 Sqft</option>
-              <option value="1200 Sqft">1200 Sqft</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="bangalore">Bangalore</option>
+              <option value="pune">Pune</option>
+              <option value="chennai">Chennai</option>
+              <option value="gurgaon">Gurgaon</option>
+              <option value="hyderabad">Hyderabad</option>
+              <option value="delhi">Delhi</option>
+              <option value="noida">Noida</option>
+              <option value="greaternoida">Greater Noida</option>
+              <option value="ghaziabad">Ghaziabad</option>
+              <option value="faridabad">Faridabad</option>
             </select>
             <input className='px-2 md:px-48 border-[1px] ' type="text" id="demo" name="demo" placeholder="Search upto 3 localities" />
             <button className='px-1 md:px-14 flex py-3 border-1 bg-red-500 font-semibold text-white border-gray-200'><FaSearch className='mr-[3px] mt-[7px]' />Search</button>
@@ -50,17 +57,20 @@ export default function Home() {
             <div className='apartmentdropdown ml-[5px] px-1'>
               <select id="sites" className="dropdown  text-gray-500 text-xs py-[10px] px-10 border-[1px] bg-white ">
                 <option value="" >Apartment Type</option>
-                <option value="800 Sqft">800 Sqft</option>
-                <option value="1000 Sqft">1000 Sqft</option>
-                <option value="1200 Sqft">1200 Sqft</option>
+               <option value="1RK">1 RK</option>
+                <option value="1bhk">1 BHK</option>
+                <option value="2bhk">2 BHK</option>
+                <option value="3bhk">3 BHK</option>
+                <option value="4bhk">4 BHK</option>
+                <option value="4+bhk">4+ BHK</option>
               </select>
             </div>
             <div className='propertystatus px-1'>
               <select id="sites" className="dropdown text-gray-500 text-xs py-[10px] px-10 border-[1px] bg-white ">
                 <option value="">Property Status</option>
-                <option value="800 Sqft">800 Sqft</option>
-                <option value="1000 Sqft">1000 Sqft</option>
-                <option value="1200 Sqft">1200 Sqft</option>
+                <option value="underconstruction">Under Construction</option>
+                <option value="ready">Ready</option>
+               
               </select>
             </div>
             <div className='newbuilderprojects md:px-1'>
@@ -75,7 +85,7 @@ export default function Home() {
         </div>
 
         <div className='freepropertybutton flex justify-center mt-20 md:mt-7'>
-          <button type="button" className='border-[1px] py-2 px-6 bg-green-600 text-white font-semibold'>Post Free Property ad</button>
+          <Link href="/postproperty"><a><button type="button" className='border-[1px] py-2 px-6 bg-green-600 text-white font-semibold'>Post Free Property ad</button></a></Link>
 
         </div>
         <div className='items-center flex justify-center mt-10 md:mt-4 text-sm py-3 text-white bg-indigo-900'>

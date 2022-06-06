@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-
+import {BsFileEarmarkLock2} from 'react-icons/bs'
+import {TbBadges} from 'react-icons/tb'
+import {AiOutlineFacebook} from 'react-icons/ai'
+import {BsHouseDoor} from 'react-icons/bs'
 const Postproperty = () => {
 
     const [val, setVal] = useState("propertydetails");
@@ -11,9 +14,10 @@ const Postproperty = () => {
     console.log(val)
 
     return (
-        <section className='mt-20'>
+        <>
+        <section className='mt-20 bg-gray-100'>
             <div className='flex justify-center'>
-                <div className='leftcol w-[175px] text-center bg-white h-[100vh]'>
+                <div className='leftcol w-[175px] shadow-md border-[1px] text-center bg-white h-[100vh]'>
                     <ul >
                         <li onClick={() => toggleresponse("propertydetails")} className={`py-5 cursor-pointer ${val == "propertydetails" ? "border-green-600 text-green-500 font-semibold border-[1.95px] " : ""} border-[1px] border-gray-200`}>Property Details</li>
                         <li onClick={() => toggleresponse("localitydetails")} className={`py-5 cursor-pointer ${val == "localitydetails" ? "border-green-600 text-green-500 font-semibold border-[1.95px] " : ""} border-[1px] border-gray-200`}>Locality Details</li>
@@ -23,9 +27,10 @@ const Postproperty = () => {
                         <li onClick={() => toggleresponse("schedule")} className={`py-5 cursor-pointer ${val == "schedule" ? "border-green-600 text-green-500 font-semibold border-[1.95px] " : ""} border-[1px] border-gray-200`}>Schedule</li>
                     </ul>
                 </div>
-                <div className='midcol w-2/5 mx-5 bg-green-100 h-[100vh]'>
+                <div className='midcol w-2/5 shadow-md mx-5 border-[1px] bg-white h-[100vh]'>
                     {val == "propertydetails" && <div className='page1 '>
                         <div className='p-5 ml-5 text-lg text-gray-600'>Property Details</div>
+                        <h1 className='w-full h-[1px] bg-gray-300'></h1>
                         <div className='' >
                             <div className='row1 flex justify-between w-full'>
                                 <div className="field p-7 ml-5 text-gray-500 ">
@@ -379,8 +384,7 @@ const Postproperty = () => {
 
                         </div>
                     </div>}
-                    {
-                        val == "gallery" &&
+                    {val == "gallery" &&
                         <div className='page-5'>
                             <div>
                                 <div className='m-5 text-green-600 font-semibold'>Upload photos & videos</div>
@@ -392,20 +396,99 @@ const Postproperty = () => {
                                         <button className='bg-green-600 text-white rounded-md px-4 mt-6 py-1'>Add Photos</button>
                                     </div>
                                 </div>
+                                <h1 className='w-full h-[1px] bg-gray-400 mt-16'></h1>
+                                <div className='flex justify-center font-semibold mt-5'><h1>We can upload photos on your behalf</h1></div>
+                                <div className='flex justify-evenly mt-10'>
+                                    <div className='border-[1px] px-16 py-2 font-semibold'>
+                                        <h1>Whatsapp us on</h1>
+                                        <h1 className='w-28 bg-gray-400 h-[1px] '></h1>
+                                        <h1>0-9241-700-000</h1>
+                                    </div>
+                                    <div className='border-[1px] px-16 py-2 font-semibold'>
+                                        <h1>Email to</h1>
+                                        <h1 className='w-28 bg-gray-400 h-[1px] '></h1>
+                                        <h1 >photos@nobroker.in</h1>
+                                    </div>
+                                </div>
+                                <div className='ml-14 mt-16 bg-gray-100 rounded-md border-[1px] w-[650px] h-[20vh] flex justify-center'>
+                                    <div className=' h-full w-1/2 text-center '>
+                                        <h1 className='mt-14 font-semibold'>Add Videos to get 5X more responses</h1>
+                                        <p>90% tenants contact on properties with videos</p>
+                                        <button className='bg-green-600 text-white rounded-md px-4 mt-6 py-1'>Add Videos</button>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+                    }
+                    {
+                        val == "schedule" &&
+                        <div className='page-5'>
+                            <h1 className='m-6 text-green-500 font-semibold'>Make house visits hasstle free by providing us your availability</h1>
+                            <h1 className='w-full h-[1px] bg-gray-300'></h1>
+                            <div className='m-10 flex justify-between'>
+                                <div className='border-[1px] border-gray-300 p-2 w-1/2 h-[20vh] bg-gray-100 rounded-md text-gray-600'>
+                                    <h1 className='text-sm p-1 font-semibold '>Get My Property Painted <br />Before Tenant Moves</h1>
+                                    <span className='flex space-x-3 text-xs '><h1 className='border-[1px] rounded-lg px-2 bg-gray-300'>Lowest Price</h1><h1 className='border-[1px] rounded-lg px-2 bg-gray-300'>1 Year Warranty</h1></span>
+                                    <div className='space-x-2 ml-2 space-y-8 text-sm'><button className='border-[1px] p-2'>Tell me the price</button><button className='border-[1px] p-2'>I don't want Painting</button></div>
+                                </div>
+                                <div className='border-[1px] border-gray-300 p-2 w-2/5 h-[20vh] bg-gray-100 rounded-md text-gray-600'>
+                                    <h1 className='text-sm p-1 font-semibold '>Get My Property Painted <br />Before Tenant Moves</h1>
+                                    <p>Full Home Professional <br /> Cleaning</p>
+                                    <h1 className='text-sm font-semibold'>Starting from 1900!</h1>
+                                    <div className='space-x-2 ml-2 space-y-8 text-xs'><button className='border-[1px] p-2'>Tell me the price</button><button className='border-[1px] p-2'>I don't want Painting</button></div>
+                                </div>
 
-
-
+                            </div>
+                            <h1 className='w-full h-[1px] bg-gray-300'></h1>
+                            <h1 className='m-6'>Availability</h1>
+                            <div className='flex justify-evenly'>
+                                <div className='flex justify-evenly text-center w-1/2'>
+                                    <h1 className='border-[1px] border-gray-300 px-4 py-1'>Everyday<h1 className='text-xs'>Mon-sun</h1></h1>
+                                    <h1 className='border-[1px] border-gray-300 px-4 py-1'>Everyday<h1 className='text-xs'>Mon-sun</h1></h1>
+                                    <h1 className='border-[1px] border-gray-300 px-4 py-1'>Everyday<h1 className='text-xs'>Mon-sun</h1></h1>
+                                </div>
+                                <div className='flex justify-evenly'>
+                                    <div className='text-sm'>
+                                        <label htmlFor="expectedrent">Select Time Schedule*</label><br />
+                                        <input className='text-xs py-2 px-1 w-[75px] border-gray-300 border-[1px]' placeholder=' Start time' />
+                                        <div> <input type='checkbox' /> Available all day</div>
+                                    </div>
+                                    <div>
+                                       
+                                        <input className='text-xs mt-5 py-2 px-1 w-[75px] border-gray-300 border-[1px]' placeholder=' End time' />
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     }
                 </div>
 
-                <div className='rightcol w-[175px] bg-yellow-100 h-[100vh]'>
-                    right
+                <div className='rightcol w-[175px] border-[1px] shadow-md h-[100vh]'>
+                    <div className='w-[8vw] text-center text-xs m-2 p-1 h-[45vh] border-[1px] border-gray-300'>
+                        <h1 className='text-lg'>Get Tenants Faster</h1>
+                        <p className='text-sm mt-5'>Subscribe to our owner<br/>plans and find Tenants<br/> quickly and with ease</p>
+                        <BsFileEarmarkLock2 className='w-10 h-10 mt-5 ml-14'/>
+                        <h1>Privacy</h1>
+                        <TbBadges className='w-10 h-10 ml-14'/>
+                        <h1>Promoted Listing</h1>
+                        <AiOutlineFacebook className='w-10 h-10 ml-14'/>
+                        <h1>Social Marketing</h1>
+                        <BsHouseDoor className='w-10 h-10 ml-14'/>
+                        <h1>Price Consultation</h1>
+                        <button className='bg-green-500 text-md py-2 mt-5 px-5 text-white'>Show Interest</button>
+                    </div>
                 </div>
+                
+            </div>
+            <div className='h-[6vh] w-full fixed bottom-0 flex justify-center text-center  bg-gray-100 border-[1px]'>
+                <div className='text-white '><button className='py-2 px-6 mt-2 bg-red-600  font-semibold' >Save & Continue</button></div>
             </div>
         </section>
+        
+        
+            </>
     )
 }
 
