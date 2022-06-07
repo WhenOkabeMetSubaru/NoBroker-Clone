@@ -4,8 +4,9 @@ const HomeLoan = () => {
   return (
     <div className='mt-16 flex justify-evenly'>
         <div className='leftside w-2/3'>
-            <div className=' h-[50vh] bg-purple-800'>
-
+            <div className=' h-[50vh] bg-purple-800 flex'>
+                <img className='w-48 h-48' src="https://www.nobroker.in/prophub/wp-content/uploads/2022/05/Group-14772-1.svg"/>
+                <img src="https://www.nobroker.in/prophub/wp-content/uploads/2022/01/Group-15074-4.png"/>
             </div>
             <section className=' h-[33vh] bg-gray-200 m-14'>
                 <h1 className='text-3xl p-8'>How It Works</h1>

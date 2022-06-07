@@ -44,8 +44,9 @@ export default function Home() {
               <option value="ghaziabad">Ghaziabad</option>
               <option value="faridabad">Faridabad</option>
             </select>
-            <input className='px-2 md:px-48 border-[1px] ' type="text" id="demo" name="demo" placeholder="Search upto 3 localities" />
-            <button className='px-1 md:px-14 flex py-3 border-1 bg-red-500 font-semibold text-white border-gray-200'><FaSearch className='mr-[3px] mt-[7px]' />Search</button>
+            <input className='px-2 focus:outline-none md:pr-96 border-[1px] ' type="text" id="demo" name="demo" placeholder="Search upto 3 localities and landmarks" />
+            <button className='px-1 hidden md:px-14 md:flex py-3 border-1 bg-red-500 font-semibold text-white border-gray-200'><FaSearch className=' mr-[3px] mt-[7px]' />Search</button>
+            <button className='px-3 md:hidden md:px-14 flex py-3 border-1 bg-red-500 font-semibold text-white border-gray-200'><FaSearch className=' mr-[3px] mt-[7px]' /></button>
           </div>
 
           {/* ----------------------------------------------------------*/}
@@ -98,8 +99,8 @@ export default function Home() {
         <div>
           <div className='mt-10'>
             <ul className='md:flex grid grid-cols-3 gap-1    md:justify-around text-sm pl-8'>
-              <li className=''><img className='w-[60px] h-[60px] md:ml-2 ' src="https://tinyurl.com/yn59zx7v" /><h1 className=''>Home Loan</h1></li>
-              <li className='items-center '><img className='w-[60px] h-[60px] mb-4 md:ml-10 ' src="https://tinyurl.com/4z4jr4ut" />Property Legal Services</li>
+              <Link href="/services/homeloan"><a><li className=''><img className='w-[60px] h-[60px] md:ml-2 ' src="https://tinyurl.com/yn59zx7v" /><h1 className=''>Home Loan</h1></li></a></Link>
+             <Link href="/services/propertylegalservices"><a> <li className='items-center '><img className='w-[60px] h-[60px] mb-4 md:ml-10 ' src="https://tinyurl.com/4z4jr4ut" />Property Legal Services</li></a></Link>
               <li className=''><img className='w-[60px] h-[60px] mb-4 md:ml-5 ' src="https://tinyurl.com/b3hb6md8" />Sale Agreement</li>
               <li className='items-center '><img className='w-[60px] h-[60px] mb-4 md:ml-7 ' src="https://tinyurl.com/25n9apy3" />New Builder Projects</li>
               <li className='items-center '><img className='w-[60px] h-[60px] mb-4' src="https://tinyurl.com/2r4kr522" />Interiors</li>

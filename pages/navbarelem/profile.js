@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Profile = () => {
 
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState("profile");
 
     const togglemechanic = (name) => {
         setValue("");

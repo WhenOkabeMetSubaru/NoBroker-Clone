@@ -30,28 +30,28 @@ const SmallDevice = () => {
           <div className='text-center flex justify-between w-full text-sm'>
             <div className=' w-1/4'>
               <div className='flex justify-center'>
-                <div ><Link  href="/"><a><AiFillHome onClick={()=>(toggleactive("home"))} className={` w-7 h-8 ${active=="home"?"text-red-500":""}`} /></a></Link>
+                <div ><Link  href="/"><a><AiFillHome onClick={()=>(toggleactive("home"))} className={` w-7 focus:outline-none h-8 ${active=="home"?"text-red-500":""}`} /></a></Link>
                 </div>
               </div>
-              <h1 className='mb-3'>Home</h1>
+              <h1 className=''>Home</h1>
 
             </div>
 
             <div className=' w-1/4'>
               <div className='flex justify-center'>
                 <div><Link href="/services"><a><MdOpenInNewOff onClick={()=>(toggleactive("services"))}
-                  className={` w-7 h-8 ${active=="services"?"text-red-500":""}`} /></a></Link></div>
+                  className={` w-7 focus:outline-none h-8 ${active=="services"?"text-red-500":""}`} /></a></Link></div>
               </div>
               <h1>Services</h1>
             </div>
 
             <div className='w-1/4 '>
              <div className='flex justify-center'> <div><Link href="/rentMoney"><a><BiWallet onClick={()=>(toggleactive("rentpay"))}
-              className={` w-7 h-8 ${active=="rentpay"?"text-red-500":""}`} /></a></Link></div></div>
+              className={` w-7 h-8 focus:outline-none ${active=="rentpay"?"text-red-500":""}`} /></a></Link></div></div>
                 <h1>Rent Pay</h1>
               </div>
             <div className='w-1/4 '>
-             <div className='flex justify-center'><div ><Link href="/rewards"><a><AiOutlineGift onClick={()=>(toggleactive("rewards"))} className={` w-7 h-8 ${active=="rewards"?"text-red-500":""}`}/></a></Link></div></div><h1>Rewards</h1> </div>
+             <div className='flex justify-center'><div ><Link href="/rewards"><a><AiOutlineGift onClick={()=>(toggleactive("rewards"))} className={`focus:outline-none w-7 h-8 ${active=="rewards"?"text-red-500":""}`}/></a></Link></div></div><h1>Rewards</h1> </div>
           </div>
         </div>
       </div>
