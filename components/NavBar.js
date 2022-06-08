@@ -163,9 +163,9 @@ const NavBar = () => {
                       <div className={`origin-top-right ${open === "close" ? 'hidden' : ''} absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                         <div className="py-1" role="none">
 
-                          <Link href="/navbarelem/profile"><a className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Profile</a></Link>
-                          <Link href="/mychats"><a className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">My Chats</a></Link>
-                          <Link href="/navbarelem/mysupportchats"><a className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Support Charts</a></Link>
+                          <Link href="/navbarelem/profile"><a className="text-gray-700 block hover:text-green-500 px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Profile</a></Link>
+                          <Link href="/mychats"><a className="text-gray-700 block px-6 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">My Chats</a></Link>
+                          <Link href="/navbarelem/mysupportchats"><a className="text-gray-700 hover:text-green-500 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Support Charts</a></Link>
                           
                             <a onClick={togglelist1} className={`flex    items-center text-sm py-1 px-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
 
@@ -245,8 +245,8 @@ const NavBar = () => {
                               </li>
                               
                             </ul>
-                          <a href="#" className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Rental Agreements</a>
-                          <a href="#" className="text-gray-700 block px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Sign Out</a>
+                          <a href="#" className="text-gray-700 block px-6 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Rental Agreements</a>
+                          <a href="#" className="text-gray-700 block px-6 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">My Sign Out</a>
                          
                         </div>
                       </div>
@@ -272,16 +272,16 @@ const NavBar = () => {
                     <div className={`origin-top-right ${menu === "close" ? 'hidden' : ''} absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                       <div className="py-1" role="none">
 
-                        <a href="/easy" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Post Your Property</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rental Agreement</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">Painting & Clearning</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Refer & Earn</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rent Receipts</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Tenant Plans</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Owner Plans</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Buyer Plans</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Seller Plans</a>
-                        <a onClick={togglelist2} className={`flex    items-center text-sm py-1 px-4 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
+                        <Link href="/postproperty"><a  className="text-gray-700 block hover:text-green-500 px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Post Your Property</a></Link>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rental Agreement</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">Painting & Clearning</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Refer & Earn</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rent Receipts</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Tenant Plans</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Owner Plans</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Buyer Plans</a>
+                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Seller Plans</a>
+                        <a onClick={togglelist2} className={`flex    items-center  text-sm py-1 px-4 hover:text-green-500 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded transition duration-300 ease-in-out cursor-pointer`} data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
 
                               <span>My Commercial Plans</span>
                               <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -290,21 +290,21 @@ const NavBar = () => {
                             </a>
                             <ul className={`relative ${mylist2 === "close" ? 'hidden' : 'block'} accordion-collapse collapse`} id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
                             <li className="relative">
-                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Tenants</a>
+                                <a href="#!" className="flex items-center text-md py-4  pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Tenants</a>
                               </li>
                               <li className="relative">
-                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owners</a>
+                                <a href="#!" className="flex items-center text-md py-4  pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Owners</a>
                               </li>
                               <li className="relative">
-                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Buyers</a>
+                                <a href="#!" className="flex items-center text-md py-4  pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Buyers</a>
                               </li>
                               <li className="relative">
-                                <a href="#!" className="flex items-center text-md py-4 pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Sellers</a>
+                                <a href="#!" className="flex items-center text-md py-4  pl-12 pr-6 h-10 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-green-500 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">For Sellers</a>
                               </li>
                             </ul>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Carrers</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Corporate Enquiry</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Contact Us</a>
+                        <a href="#" className="text-gray-700 block px-4 hover:text-green-500 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Carrers</a>
+                        <a href="#" className="text-gray-700 block px-4 hover:text-green-500 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Corporate Enquiry</a>
+                        <a href="#" className="text-gray-700 block px-4 hover:text-green-500 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Contact Us</a>
                         <div className='ml-5'>
                           <h1>Email</h1>
                           <h2>hello@nobroker.in</h2>
@@ -327,6 +327,9 @@ const NavBar = () => {
             </ul>
           </div>
         </nav>
+     
+     
+     
       </div>
       <div className={`bg-white z-10 h-[100vh] border-[1px] border-black top-0 fixed w-[80vw] ${mymenu == "open" ? 'block' : 'hidden'}  `}>
         <div onClick={togglemenubar} className='bg-red-600 font-semibold text-white py-8 text-center'>
