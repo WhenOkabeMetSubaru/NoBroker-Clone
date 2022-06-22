@@ -273,11 +273,11 @@ const NavBar = () => {
                       <div className="py-1" role="none">
 
                         <Link href="/postproperty"><a  className="text-gray-700 block hover:text-green-500 px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Post Your Property</a></Link>
-                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rental Agreement</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">Painting & Clearning</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Refer & Earn</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rent Receipts</a>
-                        <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Tenant Plans</a>
+                        <a href="/rentalagreement" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rental Agreement</a>
+                        <a href="/paintingandclearning" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">Painting & Clearning</a>
+                        <a href="/referandearn" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Refer & Earn</a>
+                        <a href="/rentreceipts" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Rent Receipts</a>
+                        <a href="/tenantplants" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Tenant Plans</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Owner Plans</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Buyer Plans</a>
                         <a href="#" className="text-gray-700 block px-4 py-2 hover:text-green-500 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Seller Plans</a>
