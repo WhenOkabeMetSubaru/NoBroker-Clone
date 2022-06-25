@@ -63,7 +63,7 @@ const Commercial = () => {
              
             </select>
           </div>
-          <div className='newbuilderprojects md:px-1'>
+          <div className='newbuilderprojects md:px-2'>
             <div className='text-gray-500 text-xs py-[10px] px-1 md:px-4 border-[1px] bg-white'><input className='mr-[7px]' type="checkbox" />New Builder Projects</div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Commercial = () => {
         <div><hr className='w-24 mt-3 ml-3 border-gray-400' /></div>
       </div>
 
-      <div className='freepropertybutton flex justify-center mt-20 md:mt-7'>
+      <div className='freepropertybutton flex justify-center mt-20 md:mt-6'>
         <Link href="/postproperty"><a><button type="button" className='border-[1px] py-2 px-6 bg-green-600 text-white font-semibold'>Post Free Property ad</button></a></Link>
 
       </div>
