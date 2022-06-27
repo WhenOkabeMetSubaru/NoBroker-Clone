@@ -42,9 +42,9 @@ const PropertyLegalServices = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full mt-10 h-[45vh] bg-gray-100 border-[1px]'>
+            <div className='w-full mt-12 h-[45vh] bg-gray-100 border-[1px]'>
                 <div className='text-center text-gray-400 p-10'>
-                    <h1 className='text-red-500 mb-3 text-4xl font-semibold'>Get end to end assistance in buying a property</h1>
+                    <h1 className='text-red-500 mb-4 text-4xl font-semibold'>Get end to end assistance in buying a property</h1>
                     <p>We know buying a property can be a nightmare given the paperwork involved, that's why NoBroker Buyer Assist Plan makes it easy for you</p>
                     <div className='flex justify-evenly mt-16'>
                         <div>
