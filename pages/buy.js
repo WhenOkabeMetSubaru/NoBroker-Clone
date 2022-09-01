@@ -23,11 +23,7 @@ const Buy = () => {
 
           <select id="sites" className="dropdown4  py-3 px-[1px] md:px-5 border-[1px] font-semibold text-gray-500 bg-white ">
             <option value="mumbai">Mumbai</option>
-            <option value="bangalore">Bangalore</option>
-            <option value="pune">Pune</option>
-            <option value="chennai">Chennai</option>
-            <option value="gurgaon">Gurgaon</option>
-            <option value="hyderabad">Hyderabad</option>
+            >
             <option value="delhi">Delhi</option>
             <option value="noida">Noida</option>
             <option value="greaternoida">Greater Noida</option>
