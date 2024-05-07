@@ -142,25 +142,21 @@ const NavBar = () => {
             <ul className='mb-1 lg:flex lg:justify-evenly lg:mt-3 hidden text-sm'>
               <li className='flex cursor-pointer items-center mx-3 border-[1px] border-grey px-2  '><img className='h-5 mr-1' src='https://assets.nobroker.in/nb-new/public/myBooking.svg' /><Link href="/mybooking"><a> My Bookings</a></Link></li>
               <li className='flex mx-3 items-center border-[1px] text-center  border-grey px-2 cursor-pointer'><img className='w-5 h-4  mr-2 mb-1 mt-1' src='https://assets.nobroker.in/nb-new/public/payrent.png' /><Link href="/payrent"><a>Pay Rent</a></Link></li>
-              <Link href="/postproperty"><a><li className='bg-green-600 text-center py-1 w-40 text-white'>For Property owners</li></a></Link>
+              <Link href="/postproperty"><a><li className='bg-green-600 text-center py-1.5 rounded w-40 mt-1 text-white'>For Property owners</li></a></Link>
               <li className='flex mx-1 ml-4'><img src="https://assets.nobroker.in/nb-new/public/nbCash.svg" /></li>
               <li className='flex mx-5 text-gray-500  border-[2px] rounded-full h-8 w-8 border-gray-300 '>
-                <div className='flex '><FaUserCircle className='w-7 mr-2 h-7 text-gray-500' />
+                <div onClick={ toggledropdown } className='flex cursor-pointer'><FaUserCircle className='w-7  h-7 text-gray-500' />
                   {
 
                     <div className={`relative  inline-block text-left`}>
                       <div>
-                        <button type="button" onClick={toggledropdown} className={`inline-flex  justify-center w-full  py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500`} id="menu-button" aria-expanded="true" aria-haspopup="true">
+                        {/* <button type="button"  className={`inline-flex outline-none  justify-center w-full  py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500`} id="menu-button" aria-expanded="true" aria-haspopup="true">
                           User
-
-                          <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </button>
+                        </button> */}
                       </div>
 
 
-                      <div className={`origin-top-right ${open === "close" ? 'hidden' : ''} absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
+                      <div className={`origin-top-right ${open === "close" ? 'hidden' : ''} absolute right-0 mt-10 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                         <div className="py-1" role="none">
 
                           <Link href="/navbarelem/profile"><a className="text-gray-700 block hover:text-green-500 px-6 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Profile</a></Link>
@@ -254,13 +250,13 @@ const NavBar = () => {
                   }
                 </div>
               </li>
-              <li className='flex text-gray-500 ml-10 mr-4  px-2'><IoIosNotificationsOutline className='h-8 w-6' /></li>
+              <li className='flex text-gray-500 mr-4  px-2'><IoIosNotificationsOutline className='h-8 w-7 cursor-pointer' /></li>
               <li className='flex mx-3 text-gray-500'>
                 {
 
                   <div className={`relative  inline-block text-left`}>
                     <div>
-                      <button type="button" onClick={togglemenu} className={`inline-flex  justify-center w-full  py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500`} id="menu-button" aria-expanded="true" aria-haspopup="true">
+                      <button type="button" onClick={togglemenu} className={`inline-flex outline-none  justify-center w-full  py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50  `} id="menu-button" aria-expanded="true" aria-haspopup="true">
 
 
                         <CgMenu className='mt-[3px] w-7 h-4' />
