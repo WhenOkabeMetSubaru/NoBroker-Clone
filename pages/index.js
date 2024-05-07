@@ -169,7 +169,7 @@ export default function Home ()
         </div>
 
         <div className='freepropertybutton flex justify-center mt-20 md:mt-7'>
-          <Link href="/postproperty"><a><button type="button" className='border-[1px] py-2 px-6 bg-green-600 text-white font-semibold'>Post Free Property ad</button></a></Link>
+          <Link href="/postproperty"><a><button type="button" className='border-[1px] py-2 px-6 rounded bg-green-700 text-white font-semibold'>Post Free Property ad</button></a></Link>
 
         </div>
         <div className='items-center flex justify-center mt-10 md:mt-4 text-sm py-3 text-white bg-indigo-900'>
@@ -182,12 +182,13 @@ export default function Home ()
         <div>
           <div className='mt-10'>
             <ul className='md:flex grid grid-cols-3 gap-1    md:justify-around text-sm pl-8'>
-              <Link href="/services/homeloan"><a><li className=''><img className='w-[60px] h-[60px] md:ml-2 ' src="https://tinyurl.com/yn59zx7v" /><h1 className=''>Home Loan</h1></li></a></Link>
-              <Link href="/services/propertylegalservices"><a> <li className='items-center '><img className='w-[60px] h-[60px] mb-4 md:ml-10 ' src="https://tinyurl.com/4z4jr4ut" />Property Legal Services</li></a></Link>
-              <li className=''><img className='w-[60px] h-[60px] mb-4 md:ml-5 ' src="https://tinyurl.com/b3hb6md8" />Sale Agreement</li>
-              <li className='items-center '><img className='w-[60px] h-[60px] mb-4 md:ml-7 ' src="https://tinyurl.com/25n9apy3" />New Builder Projects</li>
-              <li className='items-center '><img className='w-[60px] h-[60px] mb-4' src="https://tinyurl.com/2r4kr522" />Interiors</li>
-              <li className='items-center '><img className='w-[60px] h-[60px] mb-4 md:ml-6 ' src="https://tinyurl.com/yht5fve4" />NoBroker for NRI's</li>
+              <Link href="/services/homeloan"><a><li className=''><img className='w-[60px] h-[60px] md:ml-2 mb-1' src="/homeLoan.png" /><h1 className=''>Home Loan</h1></li></a></Link>
+              <Link href="/services/propertylegalservices"><a> <li className='items-center '><img className='w-[50px] h-[60px] mb-1 md:ml-10 ' src="/legalServices.png" />Property Legal Services</li></a></Link>
+              <li className=''><img className='w-[60px] h-[60px] mb-1 md:ml-5 ' src="/saleAgreeemnt.png" />Sale Agreement</li>
+              <li className='items-center '><img className='w-[60px] h-[60px] mb-2 md:ml-7 ' src="/newbuilder.png" />New Builder Projects</li>
+              <li className='items-center '><img className='w-[60px] h-[60px] mb-2' src="/interiors.png" />Interiors</li>
+              <li className='items-center '><img className='w-[60px] h-[60px] mb-2 md:ml-6 ' src="/brokernri.png" />NoBroker for NRI's</li>
+              
             </ul>
           </div>
           <div className='whybox flex justify-center mt-10'>
@@ -203,10 +204,10 @@ export default function Home ()
           </div>
           <div className='mt-16'>
             <ul className='flex justify-between text-center md:ml-16 md:mr-16'>
-              <li className='flex-column '><img className='md:ml-20 ml-6' src="https://tinyurl.com/4hu549uy" /><h1 className=' text-sm md:text-lg'>Avoid Brokers</h1><p>We directly connect you to verified<br /> owners to sav brokerage</p></li>
-              <li className='flex-column '><img className='md:ml-16' src="https://tinyurl.com/5yhnfap2" /><h1 className='text-sm md:text-lg'>Free Listing</h1><p>Easy listing process.Also<br /> using WhatsApp</p></li>
-              <li className='flex-column '><img className='md:ml-12' src="https://tinyurl.com/24yyxxm5" /><h1 className='text-sm md:text-lg'>Shortlist Without Visit</h1><p>Extensive Information<br />makes it easy</p></li>
-              <li className='flex-column '><img className='md:ml-16 ml-8' src="https://tinyurl.com/2s4e8vrj" /><h1 className='text-sm md:text-lg'>Rental Agreement</h1><p>Assitance in creating Rental<br /> agreement & Paper work</p></li>
+              <li className='flex-column '><img className='md:ml-20 ml-6' src="/avoidbrokers.png" /><h1 className=' text-sm md:text-lg'>Avoid Brokers</h1><p>We directly connect you to verified<br /> owners to sav brokerage</p></li>
+              <li className='flex-column '><img className='md:ml-16' src="/legalServices.png" /><h1 className='text-sm md:text-lg'>Free Listing</h1><p>Easy listing process.Also<br /> using WhatsApp</p></li>
+              <li className='flex-column '><img className='md:ml-12' src="/homeLoan.png" /><h1 className='text-sm md:text-lg'>Shortlist Without Visit</h1><p>Extensive Information<br />makes it easy</p></li>
+              <li className='flex-column '><img className='md:ml-16 ml-8' src="/saleagreeemnt.png" /><h1 className='text-sm md:text-lg'>Rental Agreement</h1><p>Assitance in creating Rental<br /> agreement & Paper work</p></li>
             </ul>
           </div>
         </div>
@@ -267,7 +268,7 @@ export default function Home ()
 
         {/*----------------------------Our Customers Love Us---------------------------------------------------- */ }
 
-        <div className='items-center text-center bg-blue-600 mt-10 py-8' >
+        <div className='items-center text-center bg-indigo-900 mt-10 py-8' >
           <div className='text-2xl md:text-3xl text-white'>
             <h1 >Our Customers Love us</h1>
           </div>

@@ -135,7 +135,7 @@ const NavBar = () => {
 
           </div>
           <div>
-            <Link href="/"><a><img className='w-[140px] lg:w-[170px]' src="https://assets.nobroker.in/static/img/logos/nb_logo_new_trans.svg" alt="logo" /></a></Link>
+            <Link href="/"><a><img className='w-[140px] lg:w-[170px] mt-1 mx-2' src="https://assets.nobroker.in/static/img/logos/nb_logo_new_trans.svg" alt="logo" /></a></Link>
           </div>
 
           <div>
